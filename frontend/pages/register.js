@@ -98,7 +98,9 @@ const RegisterAnimation = () => {
           value={trailer}
           onChange={(e) => setTrailer(e.target.value)}
         />
-        <button type="submit">Register Animation</button>
+        <button className={styles.bt} type="submit">
+          Register Animation
+        </button>
       </form>
 
       <ul className={styles.list}>

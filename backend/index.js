@@ -8,6 +8,7 @@ const path = require("path");
 const app = express();
 const PORT = process.env.PORT || 3000;
 
+require("dotenv").config();
 // Middleware
 app.use(cors());
 app.use(bodyParser.json());
@@ -27,7 +28,8 @@ const upload = multer({ storage });
 
 // MongoDB 연결
 mongoose
-  .connect("mongodb://localhost:27017/animationDB")
+  .connect(process.env.MONGODB_URI)
+  // .connect("mongodb://localhost:27017/animationDB")
   .then(() => console.log("MongoDB Connected"))
   .catch((err) => console.error("MongoDB Connect Error", err));
 
