@@ -1,0 +1,71 @@
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+button:hover {
+  background-color: #005bb5;
+}
+
+.title {
+  margin-top: 30px;
+  font-size: 24px;
+  text-align: center;
+}
+
+.list {
+  list-style-type: none;
+  width: 100%;
+}
+
+.item {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.item:hover {
+  transform: scale(1.05);
+}
+
+.item img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.cardTitle {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.cardGenre {
+  font-size: 14px;
+  color: #555;
+}
+
+.cardEpisode {
+  font-size: 14px;
+  color: #777;
+}
+
+.formList {
+  text-align: center;
+}
+
+.images {
+  width: 100%;
+  max-width: 500px;
+  margin: auto;
+}
